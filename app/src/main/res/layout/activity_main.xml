@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rd_home"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/selector_home_drawable"
+            android:text="@string/home"
+            android:textColor="@drawable/selector_text"/>
+        <RadioButton
+            android:id="@+id/rd_phone"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/selector_phone_drawable"
+            android:text="@string/phone"
+            android:textColor="@drawable/selector_text"/>
+        <RadioButton
+            android:id="@+id/rd_find"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/selector_find_drawable"
+            android:text="@string/find"
+            android:textColor="@drawable/selector_text"/>
+        <RadioButton
+            android:id="@+id/rd_personal"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/selector_personal_drawable"
+            android:text="@string/personal"
+            android:textColor="@drawable/selector_text"/>
+
+    </RadioGroup>
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/radio_group"
+        />
+</RelativeLayout>
